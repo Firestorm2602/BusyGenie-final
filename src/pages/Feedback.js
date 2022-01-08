@@ -6,7 +6,6 @@ import './Feedback.css';
 function Feedback() {
     return (
         <div className='feedback'>
-            <div className='watermark'>FEEDBACK</div>
             <Form/>
         </div>
     )

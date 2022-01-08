@@ -5,7 +5,8 @@ import './Timer.css';
 function Timer() {
     return (
         <div className='timer'>
-            <h1>Timer</h1>
+            <div >Timer</div>        
+
         </div>
     )
 }

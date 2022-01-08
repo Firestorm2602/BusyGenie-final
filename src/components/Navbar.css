@@ -5,7 +5,9 @@
     display:flex;
     justify-content:space-between;
     align-items: center;
-    z-index:2;
+    z-index:999 !important;
+    position:fixed;
+    top:0;
 }
 
 .menu-bars{
@@ -19,8 +21,6 @@
 .menu-bars:hover{
     cursor:pointer;
 }
-
-
 
 .nav-menu.active{
     left:0;
@@ -207,6 +207,7 @@
 .nav-menu-auth{
     display:flex;
     flex-wrap: wrap;
+    margin-right:15px;
 }
 
 .navbar-button-line{

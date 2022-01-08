@@ -1,13 +1,4 @@
-.watermark{
-    width:fit-content;
-    z-index:-1;
-    font-family: 'Montserrat', sans-serif;
-    font-size:10rem;
-    transform:rotateZ(90deg)translateY(240px);
-    position:fixed;
-    top:40vh;
-    left:0;
-    transform:5s;
-    color:rgba(0,0,0,0.7);
+.home{
+    overflow-y:scroll;
+    padding-top:80px;
 }
-

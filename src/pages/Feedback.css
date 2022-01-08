@@ -7,4 +7,9 @@
     overflow-y: scroll;
     background-color:#5095e4;
     font-family: 'Poppins', sans-serif ;
+    z-index:1;
+    overflow-y:scroll;
+    padding-top:80px;
+    /* background: URL("../components/33387.png"); #5095e4 #1a4679*/
 }
+
