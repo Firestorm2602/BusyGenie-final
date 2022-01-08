@@ -1,0 +1,211 @@
+.navbar{
+    width:100%;
+    background-color: #2f2fa2;
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.menu-bars{
+    margin-top:1rem;
+    margin-left: 1rem;
+    font-size: 2 rem;
+    background: none;
+    color:white;
+}
+
+.menu-bars:hover{
+    cursor:pointer;
+}
+
+
+
+.nav-menu.active{
+    left:0;
+    transition:300ms;
+}
+
+.nav-text *{
+    text-decoration: none;
+    color:white;
+    font-size:1.2rem;
+    transition:ease;
+} 
+.nav-text {
+    display:flex;
+    align-items:center;
+    height: 70px;
+}
+
+.nav-item-title {
+    display:block;
+    font-size:1.3rem;
+    font-family: 'Lato', sans-serif;
+}
+.nav-item-logo svg{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-item{
+    width:100em;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-end;
+    border-radius: 0 5px 5px 0;
+}
+
+.nav-menu-item{
+    width:100em;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-end;
+    border-radius: 0 5px 5px 0;
+    padding-right:20px;
+}
+
+.navbar-toggle{
+    display:flex;
+    justify-content:center;
+}
+.menu-bars svg{
+    color:white;
+    transform: translateY(-5px) scale(1.4);
+}
+
+.nav-menu-title{
+    color:white;
+}
+
+.nav-menu-auth{
+    color:white;
+}
+.nav-text:hover{
+    background-color:  #f64c72 ;
+    transition: color,0.2s;
+    border-radius: 2px;
+}
+
+.navbar-cross{
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-left:130px;
+    cursor:pointer;
+}
+
+.nav-menu-items{
+    align-items:center;
+    
+}
+
+.nav-menu-title{
+    font-family: 'Berkshire Swash', cursive;
+    font-size:2.5rem;
+    text-decoration:none;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.nav-button{
+    display:none;
+    border-width:5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.nav-button.active{
+    display:inline;
+}
+
+/* CSS */
+.button-48 {
+    color:white;
+    appearance: none;
+    background-color: rgba(0,0,0,0);
+    border-width: 3px;
+    border-color:#f64c72;
+    border-style:solid;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Lato',Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 0.2em 0.7em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    display:none;
+    margin: 0px 5px;
+    border-radius: 1px;
+    box-shadow:  2px 2px 5px #181851,
+                -2px -2px 5px #4747f3;
+}
+
+.button-48:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #f64c72;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+}
+
+.button-48:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+    background-color: #f64c72;
+}
+
+.button-48 span {
+    color:white;
+    z-index: 1;
+    position: relative;
+}
+
+.button-48.active {
+    display:flex;
+}
+.nav-menu{
+    background:#2f2fa2;
+    width:170px;
+    height: 100vh;
+    display:flex;
+    justify-content:flex-end;
+    position:fixed;
+    top:0;
+    left:-100%;
+    transition:800ms;
+}
+
+.nav-menu-auth{
+    display:flex;
+    flex-wrap: wrap;
+}
