@@ -74,6 +74,8 @@ function Navbar() {
                         Log In
                     </span>
                 </button>
+                <div className={auth? 'navbar-button-line': 'active navbar-button-line'}>
+                </div>
                 <button className={auth? 'button-48': 'active button-48'} >
                     <span className="text">
                         Sign Up
