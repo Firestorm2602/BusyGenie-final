@@ -21,3 +21,20 @@ a:hover {
 a:active {
     text-decoration: none;
 }
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 12px;
+    z-index:1000;
+}
+::-webkit-scrollbar-thumb { 
+    background: rgb(187, 187, 187);
+    border-radius: 10px;
+    z-index:1000;
+}
+
+::webkit-scrollbar-thumb:hover {
+    background: rgb(126, 125, 125); 
+    z-index:1000;
+}

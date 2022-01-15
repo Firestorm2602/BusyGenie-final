@@ -1,13 +1,18 @@
 .navbar{
     width:100%;
-    background-color: #2f2fa2;
+    background-color: #41b3a3;
     height:60px;
-    display:flex;
-    justify-content:space-between;
+    /* display:flex;
+    justify-content:space-between; */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     z-index:999 !important;
     position:fixed;
     top:0;
+    box-shadow: 0px 1px 20px 4px rgba(0,0,0,0.64);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+
 }
 
 .menu-bars{
@@ -80,13 +85,15 @@
 
 .nav-menu-title{
     color:white;
+    display:flex;
+    justify-content:center;
 }
 
 .nav-menu-auth{
     color:white;
 }
 .nav-text:hover{
-    background-color:  #f64c72 ;
+    background-color:  #E8A87C ;
     transition: color,0.2s;
     border-radius: 2px;
 }
@@ -102,7 +109,7 @@
 
 .nav-menu-items{
     align-items:center;
-    
+    box-shadow: 1px 0px 13px 4px rgba(0,0,0,0.2);
 }
 
 .nav-menu-title{
@@ -129,7 +136,7 @@
     appearance: none;
     background-color: rgba(0,0,0,0);
     border-width: 0px;
-    border-color:#f64c72;
+    border-color:#E8A87C;
     border-style:solid;
     box-sizing: border-box;
     color: #000000;
@@ -142,7 +149,7 @@
     margin: 0;
     opacity: 1;
     outline: 0;
-    padding: 0.3em 0.8em;
+    padding: 0.5em 0.8em;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -162,7 +169,7 @@
 .button-48:before {
     animation: opacityFallbackOut .5s step-end forwards;
     backface-visibility: hidden;
-    background-color: #f64c72;
+    background-color: #E8A87C;
     clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
     content: "";
     height: 100%;
@@ -180,7 +187,7 @@
 }
 
 .button-48:after {
-    background-color: #f64c72;
+    background-color: #E8A87C;
 }
 
 .button-48 span {
@@ -193,7 +200,7 @@
     display:flex;
 }
 .nav-menu{
-    background:#2f2fa2;
+    background:#41b3a3;
     width:170px;
     height: 100vh;
     display:flex;
@@ -206,14 +213,26 @@
 
 .nav-menu-auth{
     display:flex;
+    justify-content:flex-end;
     flex-wrap: wrap;
     margin-right:15px;
 }
 
 .navbar-button-line{
+    display:none;
     min-height:100%;
     min-width:2px;
     background-color:white;
     margin: 0px 5px;
 }
 
+.navbar-button-line.active{
+    display:block;
+}
+
+@media only screen and (max-width: 575px)
+{
+    .navbar-button-line.active{
+        display:none;
+    }
+}

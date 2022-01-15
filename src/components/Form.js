@@ -20,12 +20,12 @@ function Form(){
                 <label >
                     Name
                 </label>
-                <p><input type="text" name="name" /></p>
+                <p><input type="text" name="name" required/></p>
                 </div>
                 <div className="e-mail">
                 <label>
                     Email
-                    <p><input type="text" name="email" /></p>
+                    <p><input type="text" name="email" required/></p>
                 </label>
                 </div>
                 <div className="starxo">
@@ -39,7 +39,7 @@ function Form(){
                 <div className="message">
                 <label>
                     Message
-                    <textarea placeholder='Your feedback here . . . '></textarea>
+                    <textarea placeholder='Your feedback here . . . ' required></textarea>
                 </label>
                 </div>
                 <div className="submit">
