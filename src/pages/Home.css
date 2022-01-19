@@ -1,4 +1,73 @@
 .home{
-    overflow-y:scroll;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.home-page-top{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-image:url("./homepage-background.jpeg"); 
+    height:65vh;
     padding-top:80px;
+}
+
+.waves-top{
+    height:0vh;
+    transform:rotate(180deg);
+}
+
+.home-page-top-title{
+    color:white;
+    font-family: 'Berkshire Swash', cursive;
+    font-size:8rem;
+    padding-top:10vh;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.home-page-top-desc{
+    color:white;
+    padding-top:1vh;
+    font-size:1.4rem;
+    font-family: 'Lato', sans-serif ;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-page-features{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+
+.features-heading{
+    margin-top:10px;
+    margin-left:20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:3rem;
+}
+
+.features-container{
+    margin-top:50px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.features-card{
+    margin:10px 5px;
+    width:650px;
+    height:350px;
+    background:rgb(195,168,255);
+    border-radius:15px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.features-card-heading{
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    font-size:2.3rem;
 }

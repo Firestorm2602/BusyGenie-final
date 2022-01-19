@@ -5,7 +5,10 @@
     padding : 0;
     font-family: 'Lato', sans-serif;
 }
-
+body{
+    margin:0;
+    overflow:auto;
+}
 a:link {
     text-decoration: none;
 }
@@ -34,7 +37,10 @@ a:active {
     z-index:1000;
 }
 
-::webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: rgb(126, 125, 125); 
     z-index:1000;
+}
+.site-container{
+    width:100%;
 }

@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <Router>
       <Navbar/>
-      <div className="siteContainer">
+      <div className="site-container">
             <Routes>
               <Route path="/"  element={<Home/>}></Route>
               <Route path="/alarms" element={<Alarms/>}></Route>
