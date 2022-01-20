@@ -1,0 +1,52 @@
+.big-container{
+    overflow-y: scroll;
+    padding-top: 80px;
+    display:flex;
+    flex-direction:column;
+    background: rgb(142, 200, 255)
+}
+
+.calendar-component{
+    color: #2574be;
+    display:flex;
+    justify-content: space-around
+    
+}
+.calendar-heading{
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+.add-event{
+    margin: auto;
+}
+.add-event-button{
+    text-align: center;
+    padding: 5px 10px ;
+    border: white;
+    color: white;
+    margin: auto;
+
+}
+.add-event-button:hover{
+    
+    background-color: rgba(255,255,255,0.2);
+    width: 20%;
+    letter-spacing: 1.5px;
+    padding: 5px 10px ;
+    backdrop-filter: blur(30px);
+    border-width: 0;
+    transition: all 0.3s ease-out;
+    border-radius: 5px;
+}
+.event-input{
+    width: 20%;
+    padding: 2px;
+}
+.final-calendar{
+    width: 1000px;
+    
+    height: 600px;
+    margin: 50px;
+
+}
