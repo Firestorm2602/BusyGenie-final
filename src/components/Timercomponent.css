@@ -1,0 +1,84 @@
+.timer-component{
+    margin-top:30px;
+    max-height:550px;
+    max-width:550px;
+}
+
+.timer-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.play-pause-buttons{
+    width:auto;
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+    cursor:pointer;
+}
+
+.timer-settings-button{
+    margin-top:30px;
+    display:flex;
+    width:150px;
+    background:#26474E;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 3px;
+    border-radius: 20px;
+    font-family:'Lato',sans-serif;
+    font-size:1.4rem;
+    cursor:pointer;
+}
+
+.timer-settings{
+    display:flex;
+    flex-direction:column;
+    align-self:center;
+    width:800px;
+    /* background:yellow; */
+}
+
+.slider{
+    height:40px;
+    border:2px solid red;
+    border-radius:20px;
+}
+
+.slider.green{
+    border:2px solid green;
+}
+
+.thumb{
+    background-color:red;
+    cursor:pointer;
+    width:36px;
+    height:36px;
+    border-radius:20px;
+    border:none;
+}
+
+.thumb.green{
+    background-color:green;
+}
+
+.timer-settings label{
+    display:block;
+    margin-bottom:10px;
+    margin-top:20px;
+    text-transform:capitalize;
+}
+
+.go-back-button{
+    display:flex;
+    align-items:center;
+    background:yellow;
+    width:fit-content;
+    align-self:center;
+    margin-top:30px;
+    padding:5px 10px;
+    border-radius:10px;
+    cursor:pointer;
+}

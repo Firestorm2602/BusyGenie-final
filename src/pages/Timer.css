@@ -1,4 +1,10 @@
 .timer{
     overflow-y:scroll;
     padding-top:80px;
+    min-height:100vh;
+    background-size:200%;
+    background-repeat:no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
 }
