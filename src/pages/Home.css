@@ -9,6 +9,7 @@
     flex-direction:column;
     align-items: center;
     background-image:url("./homepage-background.jpeg"); 
+    background-size: 120%;
     height:600px;
     padding-top:80px;
 }
