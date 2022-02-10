@@ -16,10 +16,14 @@ function Timercomponent() {
 
     const [secondsLeft,setSecondsLeft]= useState(0);
 
+    const [timerHeading, setTimerHeading] = useState(settingsInfo.timerName);
+
     const [mode, setMode] = useState('break'); //work/break/null
 
     const secondsLeftRef = useRef(secondsLeft);
+
     const isPausedRef = useRef(isPaused);
+
     const modeRef = useRef (mode);
 
     const initTimer= () =>{
@@ -67,6 +71,9 @@ function Timercomponent() {
 
     return (
     <div className='timer-container'>
+        <div className='timer-name'>
+            {timerHeading}
+        </div>
         <CircularProgressbar className='timer-component' 
         value={percentage} 
         text={minutes + ':' + seconds} 

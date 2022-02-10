@@ -1,5 +1,4 @@
 import React from 'react';
-import * as AiIcons from 'react-icons/ai';
 
 const FormToDoList = ({setInputText, todos, setTodos, inputText, setStatus}) =>{
 

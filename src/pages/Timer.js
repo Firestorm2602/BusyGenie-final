@@ -8,9 +8,10 @@ import SettingsContext from '../components/SettingsContext';
 
 function Timer() {
 
-    const[showSettings, setShowSettings] = useState(false);
+    const [showSettings, setShowSettings] = useState(true);
     const [workMinutes, setWorkMinutes] = useState(25);
     const [breakMinutes, setBreakMinutes] = useState(5);
+    const [timerName, setTimerName] = useState("Timer");
 
     return (
         <div className='timer'>
@@ -21,6 +22,8 @@ function Timer() {
                 setBreakMinutes,
                 showSettings,
                 setShowSettings,
+                timerName,
+                setTimerName,
             }}>
             {showSettings ? <Timersettings/> : <Timercomponent/> }
             </SettingsContext.Provider>

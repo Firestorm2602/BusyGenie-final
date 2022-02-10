@@ -31,6 +31,7 @@
     font-family:'Lato',sans-serif;
     font-size:1.4rem;
     cursor:pointer;
+    margin-bottom:30px;
 }
 
 .timer-settings{
@@ -38,7 +39,7 @@
     flex-direction:column;
     align-self:center;
     width:800px;
-    /* background:yellow; */
+
 }
 
 .slider{
@@ -71,10 +72,14 @@
     text-transform:capitalize;
 }
 
+.timer-settings-input input{
+    color:black;
+    background:yellow;
+}
 .go-back-button{
     display:flex;
     align-items:center;
-    background:yellow;
+    background:blueviolet;
     width:fit-content;
     align-self:center;
     margin-top:30px;

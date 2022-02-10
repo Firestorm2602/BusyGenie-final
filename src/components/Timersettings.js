@@ -6,9 +6,21 @@ import * as AiIcons from 'react-icons/ai';
 
 
 function Timersettings() {
+    
     const settingsInfo = useContext(SettingsContext);
+    
     return (
         <div className='timer-settings'>
+            <div className='timer-settings-heading'>
+                Start a timer, get productive!
+            </div>
+            <div className='timer-settings-input'>
+                <input  type="text"
+                    
+                    defaultValue={settingsInfo.timerName}
+                    onChange={newValue => settingsInfo.setTimerName(newValue.target.value)}
+                />
+            </div>
             <label>work minutes: {settingsInfo.workMinutes}:00</label>
             <ReactSlider
             className='slider'

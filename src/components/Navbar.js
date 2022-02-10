@@ -8,7 +8,6 @@ import { SidebarData } from './SidebarData';
 function Navbar() {
     const [sidebar, setSidebar]=useState(false);
     const [auth, setAuth]=useState(false);
-
     const showSidebar = ()=> setSidebar(!sidebar);
     const authenticate = ()=> setAuth(!auth);
 

@@ -32,11 +32,8 @@ function ToDoList() {
     }
   };
   
-
-  
-
   return (
-    <div>
+    <div className='todolist-page'>
         <div className="todolist-container">
           <header className='todolist-header'>
             <h1>To-Do List</h1>
@@ -46,7 +43,7 @@ function ToDoList() {
                 setTodos={setTodos}
                 setInputText={setInputText}
                 setStatus={setStatus}
-                 />
+                />
           <TodoList filteredTodos={filteredTodos}
                     setTodos={setTodos}
                     todos={todos} />

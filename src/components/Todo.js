@@ -1,6 +1,5 @@
 import React from 'react';
-import * as AiIcons from 'react-icons/ai';
-import * as MdIcons from 'react-icons/md';
+
 
 const Todo = ({text, todo, todos, setTodos}) =>{
     //event as delete and complete
