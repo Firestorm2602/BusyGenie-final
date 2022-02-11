@@ -1,4 +1,4 @@
-import React, {useState ,  Component } from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import {
@@ -24,6 +24,7 @@ function App() {
       name: "alarm1",
       date: "2022-02-09",
       time: "23:19",
+      id: 11,
     },
   ]
   const [alarmArray, setAlarmArray] = useState(alarms);
@@ -35,6 +36,7 @@ function App() {
     audio.play();
     console.log("alarm rang for" , element.name);
   }
+  
   function abc (){
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
@@ -70,7 +72,9 @@ function App() {
       <div className="site-container">
             <Routes>
               <Route path="/"  element={<Home/>}></Route>
-              <Route path="/alarms" element={<Alarms/>}></Route>
+              <Route path="/alarms" element={<Alarms 
+              // setAlarmArray={setAlarmArray} alarmArray={alarmArray}
+              />}></Route>
               <Route path="/calendar" element={<Calendar/>}></Route>
               <Route path="/feedback" element={<Feedback/>}></Route>
               <Route path="/graphs" element={<Graphs/>}></Route>
